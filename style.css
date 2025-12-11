@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* 禁止滾動，畫布固定不會跟著頁面滾動 */
+  touch-action: none; /* 防止手機觸控拖曳導致頁面滾動 */
+  overscroll-behavior: none; /* 防止瀏覽器的彈性滾動或滾動傳遞 */
+}
+
+canvas {
+  display: block;
+  position: fixed; /* 把 canvas 固定在視窗，不會跟著頁面滾動 */
+  left: 0;
+  top: 0;
+}
